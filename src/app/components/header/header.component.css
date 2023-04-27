@@ -1,0 +1,85 @@
+body {
+    background: #ACD0AB;
+}
+
+.center {
+    width: 90%;
+    margin: 0px auto;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background: #ACD0AB;
+}
+
+#brand {
+    display: block;
+    margin: 0px;
+    float: left;
+    font-family: Pang;
+    color: #333333;
+}
+
+#brand:hover{
+    cursor: pointer;
+    color: #ffffff !important;
+}
+
+#logo {
+    width: 30%;
+    font-size: 38px;
+    float: left;
+    margin-top: 27px;
+}
+
+#menu {
+    width: 60%;
+    float: right;
+    font-size: 25px;
+}
+
+#menu ul{
+    line-height: 50px;
+    width: 60%;
+    float: right;
+}
+
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+#menu a{
+    text-decoration: none;
+    transition: 300ms all;
+    font-family: Pang;
+    color: #333333;
+}
+
+#menu a:hover,
+.active{
+    cursor: pointer;
+    color: #ffffff !important;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+/* Responsive */
+@media (max-width: 1585px){
+    #menu {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1361px){
+    #menu {
+        display: contents;
+    }
+}
