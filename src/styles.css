@@ -4,3 +4,7 @@
     font-family: Pang;
     src: url(./assets/font/pang.ttf);
 }
+
+body {
+    background: #ACD0AB !important;
+}
