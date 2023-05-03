@@ -10,6 +10,8 @@ import { HomeInfoComponent } from './components/home-info/home-info.component';
 import { HomeIntroComponent } from './components/home-intro/home-intro.component';
 import { HomeInfoComponent2 } from './components/home-info/home-info.component';
 import { HomeInfoLongComponent } from './components/home-info-long/home-info-long.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -22,7 +24,9 @@ import { HomeInfoLongComponent } from './components/home-info-long/home-info-lon
     HomeInfoComponent,
     HomeIntroComponent,
     HomeInfoComponent2,
-    HomeInfoLongComponent
+    HomeInfoLongComponent,
+    SignupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

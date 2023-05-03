@@ -1,0 +1,50 @@
+h6{
+  font-family: Pang;
+  font-size: 10pt;
+}
+
+h4{
+  font-family: Pang;
+  font-size: 10pt;
+  font-weight: normal;
+}
+
+h5{
+  font-family: Pang;
+  font-size: 16pt;
+}
+
+#footer{
+  width: 100%;
+  background-color: black; 
+  color: aliceblue;
+}
+#container_footer{
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+#col-1{
+  flex-basis: 15%;
+}
+
+#col-2{
+  flex-basis: 13%;
+}
+
+#col-3{
+  flex-basis: 15%;
+}
+
+#col-4{
+  flex-basis: 15%;
+}
+
+#col-5{ 
+  flex-basis: 15%; 
+}
+
+#row1{
+padding-left:  10%;
+}
