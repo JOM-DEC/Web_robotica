@@ -1,6 +1,8 @@
 <aside class="navBar">
 
-    <h1>SAFE&GO</h1>
+    <a [routerLink]="['/']" >
+        <h1>SAFE&GO</h1>
+    </a>
 
     <div class="buttons-container">
         
@@ -9,7 +11,7 @@
         <button [routerLink]="['/profile']"  class="navButton">>>      Profile</button>
 
         <div class="logout-container">
-            <button class="logoutButton">>>      Logout</button>
+            <button class="logoutButton" [routerLink]="['/']" >>      Logout</button>
         </div>
 
     </div>

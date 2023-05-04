@@ -64,8 +64,9 @@ li{
     border: none;
     transition: 300ms all;
 }
-button:hover{
-    background: #1a1a1a;
+.button-container button:hover{
+    background: #1b1b1b;
+    border: 1px solid white;
     cursor: pointer;
 }
 

@@ -16,13 +16,31 @@
 
 
 .button {
+    font-family: Pang;
+    font-size: 15px;
+    
     position: absolute;
     bottom: 0;
     right: 0;
+
     margin: 20px;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+
+    background-color: white;
+    color: black;
+
     border: none;
+    border-radius: 20px;
     cursor: pointer;
+
+    width: 280px;
+    height: 35px;
+
+    transition: 300ms all;
+}
+.button:hover{
+    color: white;
+    background-color: rgb(78, 78, 78);
+    font-size: 16px;
+    border: 1px solid white
 }

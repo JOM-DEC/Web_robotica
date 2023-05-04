@@ -12,6 +12,15 @@
     margin-bottom: 70px;
 
     font-family: pang;
+    transition: 300ms all;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
 }
 
 
