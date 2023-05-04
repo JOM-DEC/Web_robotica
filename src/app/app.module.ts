@@ -10,6 +10,7 @@ import { HomeInfoComponent } from './components/home-info/home-info.component';
 import { HomeIntroComponent } from './components/home-intro/home-intro.component';
 import { HomeInfoComponent2 } from './components/home-info/home-info.component';
 import { HomeInfoLongComponent } from './components/home-info-long/home-info-long.component';
+
 import { ControlHeaderComponent } from './components/control-header/control-header.component';
 import { ControlNavBarComponent } from './components/control-nav-bar/control-nav-bar.component';
 import { UserPageComponent } from './components/user-page/user-page.component';
@@ -18,6 +19,10 @@ import { ControlMapComponent } from './components/control-map/control-map.compon
 import { ControlProfileComponent } from './components/control-profile/control-profile.component';
 import { ControlEditProfileComponent } from './components/control-edit-profile/control-edit-profile.component';
 import { ControlStatsComponent } from './components/control-stats/control-stats.component';
+
+import { SignupComponent } from './components/signup/signup.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 
 
@@ -38,7 +43,9 @@ import { ControlStatsComponent } from './components/control-stats/control-stats.
     ControlMapComponent,
     ControlProfileComponent,
     ControlEditProfileComponent,
-    ControlStatsComponent
+    ControlStatsComponent,
+    SignupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
