@@ -12,17 +12,23 @@ import { ControlStatsComponent } from "./components/control-stats/control-stats.
 import { ControlEditProfileComponent } from "./components/control-edit-profile/control-edit-profile.component";
 import { ErrorComponent } from "./components/error/error.component";
 import { SignupComponent } from "./components/signup/signup.component";
+import { ControlMapComponent } from "./components/control-map/control-map.component";
+
+
 
 
 //Array de rutas
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
+
     {path: 'userPage', component: UserPageComponent},
     {path: 'profile', component: ControlProfileComponent},
     {path: 'status', component: ControlStatusComponent},
     {path: 'stats', component: ControlStatsComponent},
     {path: 'edit-profile', component: ControlEditProfileComponent},
+    {path: 'robot-map', component: ControlMapComponent},
+
     {path: 'signup', component: SignupComponent},
 
     //{path: 'pagina-de-pruebas', component: PaginaComponent}, //Añado dos veces para que sea opcional
