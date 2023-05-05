@@ -13,7 +13,6 @@ import { HomeInfoLongComponent } from './components/home-info-long/home-info-lon
 
 import { ControlHeaderComponent } from './components/control-header/control-header.component';
 import { ControlNavBarComponent } from './components/control-nav-bar/control-nav-bar.component';
-import { UserPageComponent } from './components/user-page/user-page.component';
 import { ControlStatusComponent } from './components/control-status/control-status.component';
 import { ControlMapComponent } from './components/control-map/control-map.component';
 import { ControlProfileComponent } from './components/control-profile/control-profile.component';
@@ -22,8 +21,9 @@ import { ControlStatsComponent } from './components/control-stats/control-stats.
 
 import { SignupComponent } from './components/signup/signup.component';
 import { FooterComponent } from './components/footer/footer.component';
-
-
+import { PrivacyComponent } from './components/privacy/privacy.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { PasswordComponent } from './components/password/password.component';
 
 
 @NgModule({
@@ -38,14 +38,16 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeInfoLongComponent,
     ControlHeaderComponent,
     ControlNavBarComponent,
-    UserPageComponent,
     ControlStatusComponent,
     ControlMapComponent,
     ControlProfileComponent,
     ControlEditProfileComponent,
     ControlStatsComponent,
     SignupComponent,
-    FooterComponent
+    FooterComponent,
+    PrivacyComponent,
+    SigninComponent,
+    PasswordComponent,
   ],
   imports: [
     BrowserModule,
