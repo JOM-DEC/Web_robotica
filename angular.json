@@ -27,7 +27,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/components/control-map/main.js",
+              "src/app/components/control-map/roslib.min.js"
+            ]
           },
           "configurations": {
             "production": {

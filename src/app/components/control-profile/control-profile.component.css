@@ -1,0 +1,105 @@
+.container{
+    font-family: pang;
+
+    margin-top: 5%;
+
+    width: 80%;
+    max-width: 80%;
+    float: right;
+
+}
+
+.list-container{
+    display: flex;
+    flex-direction: row;
+
+    width: 30%;
+    min-width: 500px;
+    font-size: 20px;
+
+    margin-left: 5%;
+}
+
+.list-column ul li{
+    list-style: none;
+    padding-left: 0;
+}
+
+.left-column{
+    flex: 1;
+}
+
+.right-column ul{
+    flex: 1;
+    color: rgb(104, 104, 104);
+}
+
+.left-column ul{
+    padding-left: 0;
+}
+
+li{
+    margin-bottom: 25px;
+}
+
+
+.button-container{
+    width: 30%;
+    min-width: 500px;
+
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.button-container button{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+
+    font-family: pang;
+    font-size: 20px;
+    color: white;
+
+    background: #535353;
+    border: none;
+    transition: 300ms all;
+}
+.button-container button:hover{
+    background: #1b1b1b;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.profile-picture{
+    width: 30%;
+    height: 200px;
+
+    margin-left: 5%;
+}
+
+.profile-picture img{
+    height: 80%;
+    max-width: 100%;
+}
+.profile-picture p{
+    margin-top: -1%;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+
+input {
+    border: none;
+    background: transparent;
+    outline: none;
+
+    padding-left: 5px;
+
+    height: 23px;
+    
+    font-family: pang;
+    font-size: 20px;
+
+    color: rgb(104, 104, 104);
+}
+

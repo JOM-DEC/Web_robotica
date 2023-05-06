@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div id="container">
+    <div id="form_container">
+        <h1>sign in</h1>
+        <h3>>> user</h3>
+        <input class="input" id="input_name" type="text">
+        <h3>>> password* </h3>
+        <input class="input" id="input_password" type="text">
+        <div id="forgot"  [routerLink]="['/forgot']" class="button" id="button_signup">>
+            <h4> ? forgot password</h4>
+        </div>
+        <div id="press_here" >
+            <p [routerLink]="['/signup']" class="button" id="button_signup"> >> don't have an account yet? press here<p>
+        </div>  
+        <button [routerLink]="['/status']" class="button" id="button_signup"> sign in</button>
+    </div>
+    <div id="contenedor-imagen">
+        <img src="../../../assets/image/imagen.png">
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,87 @@
+h1{
+    font-family: Pang;
+    font-weight:normal;
+    font-size: 40pt;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: normal;
+    font-family: Pang;
+}
+
+h4{
+    font-size: 18pt;
+    font-weight: normal;
+    font-family: Pang;
+    text-align: right;
+    cursor: pointer;
+}
+
+.input {
+    border: none;
+    outline: none;
+    height: 60px;
+    border-radius: 13px;
+    width: 100%;
+    border-color: white;  
+}
+
+button{
+    border: none;
+    height: 70px;
+    width: 100%;
+    justify-content:center;
+    font-size: 20px;
+    font-family: Pang, PangMen-Bold;
+    font-weight: normal;
+    color: #ffffff;
+    border-radius:15px ;
+    background-color: black;
+    margin-top: 38px;
+}
+
+#button_signup {
+    cursor: pointer;
+}
+
+#container{
+    margin-left: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 50px;
+    grid-gap: 100px;
+
+}
+
+#form_container, #image_container{
+    height: 100%;
+    padding: 20px;
+
+    
+}
+
+#press_here{
+    font-family: Pang;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #contenedor-imagen {
+      display: none;
+    }
+  
+    #form-container {
+      width: 100%;
+    }
+
+    #container{
+        grid-template-columns: none;
+    }
+  
+    .input{
+        width: 100%;
+    }
+  }

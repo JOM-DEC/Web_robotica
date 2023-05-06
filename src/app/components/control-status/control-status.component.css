@@ -1,0 +1,44 @@
+.content {
+    width: auto;
+
+    margin-left: 25%;
+    padding: 20px;
+
+    font-family: Pang;
+}
+
+.header-status{
+    font-size: 20px;
+    margin-top: 6%;
+}
+
+.content-robot{
+    display: inline-block;
+    width: 25%;
+    height: 125px;
+    margin-top: 5%;
+    margin-right: 3%;
+
+    text-decoration: none;
+    color: black;
+
+    border: 1px solid #a8a8a8;
+    border-radius: 15px;
+
+    background: #EDEBEB;
+
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.content-robot:hover{
+    background: #969696;
+    border:1px solid #1b1b1b;
+
+    font-size: 17px;
+}
+
+
+.robot-info{
+    text-align: center;
+}
