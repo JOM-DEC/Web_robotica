@@ -1,0 +1,126 @@
+.sec_contactanos{
+    background-color: #333333;
+    display: flex;
+    margin: 0px auto;
+    width: 100%;
+
+    margin-top: 3%;
+}
+  
+
+h2{
+    font-family: Pang;
+    color: white;
+    font-weight:normal;
+    font-size: 35pt;
+    margin-bottom: 10px; /* Ajusta el valor según el espacio que deseas entre el título y el formulario */
+}
+
+
+#container_form{
+    width: 50%;
+    padding-left: 2%;
+}
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; /* Ajusta la altura del contenedor */
+}
+  
+.text_form{
+    font-family: Pang;
+    color: #ffffff;
+    font-weight:normal;
+    font-size: 15pt;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+textarea{
+    min-height: 100px;
+    min-width: 70%;
+    max-width: 80%;
+    max-height: 180px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    height: 45px;
+    border-radius: 13px;
+    width: 75%;
+    border-color: white;  
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+#form_container{
+    height: 100%;
+    padding: 20px;    
+}
+.container_check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 15px;
+
+}
+
+.container_check .text_form{
+    color: #ACD0AB;
+    
+}
+
+
+#send_form{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+button{
+    border: none;
+    height: 60px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 20px;
+    font-family: Pang, PangMen-Bold;
+    font-weight: normal;
+    color: #ffffff;
+    border-radius:15px ;
+    background-color: black;
+    margin-left: 5%;
+   
+   
+}
+
+.img_contactanos{
+    height: 600px;
+    width: 50%;
+
+    margin-left: 10%;
+    
+}
+.img_contactanos img{
+    width: 70%;
+    height: 100%;
+
+    border-radius: 30px;
+}
+
+.contact_container{
+    background: #333333;
+    padding-bottom: 3%;
+    margin-top: 3%;
+
+    height: auto;
+}

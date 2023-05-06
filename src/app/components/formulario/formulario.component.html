@@ -1,0 +1,29 @@
+<div class="contact_container">
+  <h2 class="center-container">CONTACT US</h2>
+
+  <div class="sec_contactanos">
+  
+    <div id="container_form">
+      <label class="text_form" for="nombre"> >> name*:</label>
+      <input class="input" type="text" id="nombre" name="nombre" [(ngModel)]="nombre">
+      <label class="text_form" for="company"> >> company*:</label>
+      <input class="input" type="text" id="company" name="company">
+      <label class="text_form" for="email"> >> email*:</label>
+      <input class="input" type="email" id="email" name="email" [(ngModel)]="email">
+      <label class="text_form" for="mensaje"> >> message*:</label>
+      <textarea class="input" id="mensaje" name="mensaje" [(ngModel)]="mensaje"></textarea>
+    
+      <div class="container_check">
+        <input type="checkbox" id="check" name="check" >
+        <label class="text_form" for="check">I accept the privacy policy</label>
+      </div>
+      <button type="submit" id=" send_form">send</button>
+  
+    </div>
+  
+    <div class="img_contactanos">
+      <img src="../../../assets/image/Contactanos_img.png" alt="contactanos">
+    </div>
+  </div>
+</div>
+
