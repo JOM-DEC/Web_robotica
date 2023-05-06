@@ -24,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { PasswordComponent } from './components/password/password.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { PasswordComponent } from './components/password/password.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FontAwesomeModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
