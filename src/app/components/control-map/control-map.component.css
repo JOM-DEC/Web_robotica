@@ -20,11 +20,22 @@
     z-index: 1;
 }
 
+.coord {
+	width: 150px !important; 
+    height: auto !important;
+	display: flex;
+	justify-content: space-around;
+    background: #fff;
+    top: 60px;
+    right: 0px;
+    z-index: 1;
+}
+
 .estadisticas {
     background: #FFFFFF;
     border: 1px solid black;
     bottom: 5px;
-    left: 310px;
+    left: 400px;
     z-index: 1;
     border-radius: 21px;
     width: auto !important;

@@ -1,23 +1,17 @@
 document.addEventListener('DOMContentLoaded', event => {
     console.log("entro en la pagina")
 
-    document.getElementById("btn_con").addEventListener("click", connect)
-    document.getElementById("btn_dis").addEventListener("click", disconnect)
-    document.getElementById("move").addEventListener("click", move)
+    document.getElementById("delante").addEventListener("click", move)
     document.getElementById("derecha").addEventListener("click", derecha)
     document.getElementById("parar").addEventListener("click", parar)
-    document.getElementById("btn_jaula_on").addEventListener("click", jaulaOn)
-    //document.getElementById("btn_jaula_off").addEventListener("click", )
-    var ip_address = document.getElementById("ip_input").value
+    document.getElementById("izquierda").addEventListener("click", izquierda)
 
-    var coor_flag = false;
-    var x0 = 0
-    var y0 = 0
+    
 
     data = {
         // ros connection
         ros: null,
-        rosbridge_address: ip_address,
+        rosbridge_address: 'ws://127.0.0.1:9090/',
         connected: false,
     }
 
@@ -25,15 +19,17 @@ document.addEventListener('DOMContentLoaded', event => {
     //                                      Interuptor                                      //
     //--------------------------------------------------------------------------------------//
 
-    test = document.getElementById("test");
+    test = document.getElementById("switch");
     boolTest = false
     test.addEventListener('change', function (e) {
         boolTest = !boolTest
         if (!boolTest) {
             console.log("off");
+            disconnect();
         }
         if (boolTest) {
             console.log("on");
+            connect();
         }
     });
 
@@ -70,6 +66,7 @@ document.addEventListener('DOMContentLoaded', event => {
     }
 
     function move() {
+        console.log("¡SE MUEVE!");
         let topic = new ROSLIB.Topic({
             ros: data.ros,
             name: '/cmd_vel',
@@ -84,6 +81,8 @@ document.addEventListener('DOMContentLoaded', event => {
     }
 
     function parar() {
+        console.log("¡PARA!");
+
         let topic = new ROSLIB.Topic({
             ros: data.ros,
             name: '/cmd_vel',
@@ -97,6 +96,7 @@ document.addEventListener('DOMContentLoaded', event => {
     }
 
     function derecha() {
+        console.log("¡DERECHA!");
         let topic = new ROSLIB.Topic({
             ros: data.ros,
             name: '/cmd_vel',
@@ -104,12 +104,27 @@ document.addEventListener('DOMContentLoaded', event => {
         })
         let message = new ROSLIB.Message({
             linear: { x: 0, y: 0, z: 0, },
-            angular: { x: 0, y: 0, z: 0.8, },
+            angular: { x: 0, y: 0, z: -0.2, },
+        })
+        topic.publish(message)
+    }
+
+    function izquierda() {
+        console.log("¡IZQUIERDA!");
+        let topic = new ROSLIB.Topic({
+            ros: data.ros,
+            name: '/cmd_vel',
+            messageType: 'geometry_msgs/msg/Twist'
+        })
+        let message = new ROSLIB.Message({
+            linear: { x: 0, y: 0, z: 0, },
+            angular: { x: 0, y: 0, z: 0.2, },
         })
         topic.publish(message)
     }
 
     function getPosition() {
+        console.log("Posicion");
         let topic = new ROSLIB.Topic({
             ros: data.ros,
             name: '/odom',
@@ -120,30 +135,22 @@ document.addEventListener('DOMContentLoaded', event => {
             document.getElementById("pos_x").innerHTML = data.position.x.toFixed(2)
             document.getElementById("pos_y").innerHTML = data.position.y.toFixed(2)
 
+            x0 = document.getElementById("pos_x").innerHTML = data.position.x.toFixed(2)
+            y0 = document.getElementById("pos_y").innerHTML = data.position.y.toFixed(2)
+            
+            /*
             if (coor_flag == false) {
                 x0 = document.getElementById("pos_x").innerHTML = data.position.x.toFixed(2)
                 y0 = document.getElementById("pos_y").innerHTML = data.position.y.toFixed(2)
                 coor_flag = true
             }
+            */
         })
     }
 
-    function jaulaOn() {
-        let x1 = x0 + 1
-        let x2 = x0 - 1
-        let y1 = y0 + 1
-        let y2 = y0 - 1
-
-        if (x0 <= x1 && x0 >= x2) {
-            if (y0 <= y1 && y0 >= y2) {
-                move()
-            } else {
-                parar()
-            }
-        } else {
-            parar()
-        }
-
-    }
-
+    
 });
+
+function test(){
+    console.log(posicionX);
+}
