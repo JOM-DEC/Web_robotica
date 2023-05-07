@@ -103,3 +103,13 @@ input {
     color: rgb(104, 104, 104);
 }
 
+
+/* Responsive */
+@media (max-width: 1250px){
+    .container {
+        float: left;
+        margin-left: 3%;
+        width: auto;
+    }
+}
+

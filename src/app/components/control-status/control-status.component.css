@@ -9,7 +9,7 @@
 
 .header-status{
     font-size: 20px;
-    margin-top: 6%;
+    margin-top: 8%;
 }
 
 .content-robot{
@@ -17,7 +17,7 @@
     width: 25%;
     height: 125px;
     margin-top: 5%;
-    margin-right: 3%;
+    margin-right: 7%;
 
     text-decoration: none;
     color: black;
@@ -41,4 +41,21 @@
 
 .robot-info{
     text-align: center;
+}
+
+
+@media (max-width: 1220px){
+    .container {
+        display: grid;
+        margin-left: 10%;
+    }
+
+    .content-robot{
+        width: 70%;
+    }
+
+    .header-status{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
 }

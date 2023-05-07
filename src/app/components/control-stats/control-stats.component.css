@@ -83,3 +83,13 @@
     max-height: 300px;
 }
 
+
+/* Responsive */
+@media (max-width: 1250px){
+    .container {
+        margin-left: 4%;
+        width: 65%;
+    }
+}
+
+

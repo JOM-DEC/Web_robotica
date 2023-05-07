@@ -22,5 +22,12 @@
 .userName{
     margin-right: 6%;
     font-size: 16px;
+}
 
+
+/* Responsive */
+@media (max-width: 1250px){
+    .headerProfile {
+        width: 100%;
+    }
 }
