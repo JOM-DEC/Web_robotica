@@ -1,9 +1,8 @@
 <header id="header">
     <div class="center">
         <!-- LOGO -->
-        <div id="logo">
+        <div id="logo" [routerLink]="['/home']" [routerLink]="['']">
             <span id="brand">
-                <!-- Añadir links: <a [routerLink]="['/home']" [routerLinkActive]="['active']">Inicio</a>-->
                 Safe&Go
             </span>
         </div>
@@ -15,7 +14,7 @@
                     <a [routerLink]="['/home']" [routerLink]="['']" [routerLinkActive]="['active']">Home</a>
                 </li>
                 <li>
-                    <a>Contact</a>
+                    <a href="#formulario">Contact</a>
                 </li>
                 <li>
                     <a>About us</a>

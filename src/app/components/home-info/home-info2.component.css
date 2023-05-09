@@ -3,8 +3,8 @@
     margin: 0px auto;
     padding: 0px;
     background: #333333;
-    padding-top: 60px ;
-    padding-bottom: 60px ;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .center {
@@ -26,7 +26,7 @@
     margin-right: 80px;
 }
 
-#contentText .title{
+#contentText .title {
     margin: 0px auto;
     background-color: #333333;
     border-radius: 51px;
@@ -37,9 +37,9 @@
 #contentText h2 {
     color: #fff;
     margin: 0px auto;
-    margin-right: 15px;
+    margin-left: 94px;
     font-family: pang;
-    font-size: 55px;
+    font-size: 53px;
     width: 400px;
 }
 
@@ -59,7 +59,7 @@
     margin-top: 60px;
 }
 
-#contentImage img{
+#contentImage img {
     display: block;
     margin: 0px auto;
     width: 410px;

@@ -21,7 +21,7 @@ body {
     color: #333333;
 }
 
-#brand:hover{
+#brand:hover {
     cursor: pointer;
     color: #ffffff !important;
 }
@@ -39,13 +39,13 @@ body {
     font-size: 25px;
 }
 
-#menu ul{
+#menu ul {
     line-height: 50px;
     width: 60%;
     float: right;
 }
 
-#menu ul li{
+#menu ul li {
     display: inline-block;
     list-style: none;
     height: 46px;
@@ -53,7 +53,7 @@ body {
     margin-right: 22px;
 }
 
-#menu a{
+#menu a {
     text-decoration: none;
     transition: 300ms all;
     font-family: Pang;
@@ -61,7 +61,7 @@ body {
 }
 
 #menu a:hover,
-.active{
+.active {
     cursor: pointer;
     color: #ffffff !important;
 }
@@ -72,14 +72,15 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 1585px){
+@media (max-width: 1585px) {
     #menu {
         width: 70%;
     }
 }
 
-@media (max-width: 1361px){
+@media (max-width: 1361px) {
     #menu {
         display: contents;
     }
 }
+

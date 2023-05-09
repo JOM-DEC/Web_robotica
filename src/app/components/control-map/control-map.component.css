@@ -21,6 +21,7 @@
 }
 
 .coord {
+	border: 1px solid black;
 	width: 150px !important; 
     height: auto !important;
 	display: flex;
@@ -29,6 +30,10 @@
     top: 60px;
     right: 0px;
     z-index: 1;
+}
+
+.coord p {
+	margin-top: 10px;
 }
 
 .estadisticas {

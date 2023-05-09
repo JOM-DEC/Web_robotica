@@ -1,17 +1,20 @@
 h6{
   font-family: Pang;
   font-size: 10pt;
+  cursor: pointer;
 }
 
 h4{
   font-family: Pang;
   font-size: 10pt;
   font-weight: normal;
+  cursor: pointer;
 }
 
 h5{
   font-family: Pang;
   font-size: 16pt;
+  cursor: pointer;
 }
 
 #footer{
