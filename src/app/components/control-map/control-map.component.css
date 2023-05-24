@@ -32,6 +32,17 @@
     z-index: 1;
 }
 
+
+.camara {
+	width: 150px !important; 
+    height: auto !important;
+	display: flex;
+	justify-content: space-around;
+    top: 60px;
+    left: 460px;
+    z-index: 1;
+}
+
 .coord p {
 	margin-top: 10px;
 }
