@@ -1,8 +1,8 @@
-#map {
+#mapa {
     width: auto;
 }
 
-#map img {
+#mapa #map{
     width: 80%;
     height: auto;
 }

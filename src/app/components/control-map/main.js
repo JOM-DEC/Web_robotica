@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', event => {
     document.getElementById("parar").addEventListener("click", parar)
     document.getElementById("izquierda").addEventListener("click", izquierda)
 
+    canvasMap = document.getElementById("map");
     
 
     data = {
@@ -13,6 +14,11 @@ document.addEventListener('DOMContentLoaded', event => {
         ros: null,
         rosbridge_address: 'ws://127.0.0.1:9090/',
         connected: false,
+    }
+
+    let robotPosition = {
+        x: 0.0,
+        y: 0.0
     }
 
     //--------------------------------------------------------------------------------------//
@@ -57,6 +63,22 @@ document.addEventListener('DOMContentLoaded', event => {
             data.connected = false
             console.log("Conexion con ROSBridge cerrada")
         })
+
+        var mapTopic = new ROSLIB.Topic({
+            ros: data.ros,
+            name: '/map',
+            messageType: 'nav_msgs/msg/OccupancyGrid'
+        });
+
+        mapTopic.subscribe((message) => {
+            data.mapa = message
+            draw_occupancy_grid(canvasMap, message, robotPosition)
+
+            //Actualiza el mapa cada 5 segundos
+            //setInterval(function() {draw_occupancy_grid(canvasMap, message, robotPosition)}, 5000)
+        });
+
+        getPosition()
     }
 
     function disconnect() {
@@ -77,7 +99,6 @@ document.addEventListener('DOMContentLoaded', event => {
             angular: { x: 0, y: 0, z: 0, },
         })
         topic.publish(message)
-        getPosition()
     }
 
     function parar() {
@@ -136,7 +157,10 @@ document.addEventListener('DOMContentLoaded', event => {
             document.getElementById("pos_y").innerHTML = data.position.y.toFixed(2)
 
             x0 = document.getElementById("pos_x").innerHTML = data.position.x.toFixed(2)
+            robotPosition.x = data.position.x.toFixed(2)
             y0 = document.getElementById("pos_y").innerHTML = data.position.y.toFixed(2)
+            robotPosition.y = data.position.y.toFixed(2)
+
             
             /*
             if (coor_flag == false) {
