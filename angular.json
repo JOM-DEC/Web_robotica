@@ -29,7 +29,8 @@
             ],
             "scripts": [
               "src/app/components/control-map/main.js",
-              "src/app/components/control-map/roslib.min.js"
+              "src/app/components/control-map/roslib.min.js",
+              "src/app/components/control-map/draw_occupancy_grid.js"
             ]
           },
           "configurations": {

@@ -1,10 +1,10 @@
 #mapa {
-    width: auto;
+    
 }
 
 #mapa #map{
     width: 80%;
-    height: auto;
+    height: 710px;
 }
 
 .caja {

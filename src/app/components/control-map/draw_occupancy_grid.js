@@ -36,7 +36,7 @@ function draw_occupancy_grid(canvas, map_data, robotPosition) {
             width:4,
             height:4,
         }
-        console.log("x" + robotPosition.x);
+        //console.log("x" + robotPosition.x);
         let posX = robotPosition.x + canvas.width/2 - robotSize.width/2;;
         let posY = robotPosition.y + canvas.height/2 - robotSize.height/2;
 
@@ -74,7 +74,7 @@ function evaluarGradiente(valor) {
         [0, 255, 255],
     ];
 
-    // Convierte el valor en una posiciÃ³n en la escala
+    // Convierte el valor en una posición en la escala
     var posicion = valor / 100 * (colores.length - 1);
     var posicionEntera = Math.floor(posicion);
     var posicionDecimal = posicion - posicionEntera;

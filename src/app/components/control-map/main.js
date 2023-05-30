@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', event => {
     console.log("entro en la pagina")
 
+
+    
     document.getElementById("delante").addEventListener("click", move)
     document.getElementById("derecha").addEventListener("click", derecha)
     document.getElementById("parar").addEventListener("click", parar)
     document.getElementById("izquierda").addEventListener("click", izquierda)
 
     canvasMap = document.getElementById("map");
-    
+    let robotPosition = {
+        x: 0.0,
+        y: 0.0
+    }
 
     data = {
         // ros connection
         ros: null,
         rosbridge_address: 'ws://127.0.0.1:9090/',
         connected: false,
-    }
-
-    let robotPosition = {
-        x: 0.0,
-        y: 0.0
     }
 
     //--------------------------------------------------------------------------------------//
@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', event => {
             console.log("Conexion con ROSBridge cerrada")
         })
 
+        //Subscribe to the map topic
         var mapTopic = new ROSLIB.Topic({
             ros: data.ros,
             name: '/map',
@@ -72,12 +73,13 @@ document.addEventListener('DOMContentLoaded', event => {
 
         mapTopic.subscribe((message) => {
             data.mapa = message
+            console.log("pepe");
             draw_occupancy_grid(canvasMap, message, robotPosition)
-
+            
             //Actualiza el mapa cada 5 segundos
             //setInterval(function() {draw_occupancy_grid(canvasMap, message, robotPosition)}, 5000)
         });
-
+        
         getPosition()
     }
 
@@ -99,6 +101,7 @@ document.addEventListener('DOMContentLoaded', event => {
             angular: { x: 0, y: 0, z: 0, },
         })
         topic.publish(message)
+        //getPosition()
     }
 
     function parar() {
