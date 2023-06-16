@@ -10,8 +10,8 @@ export class HomeInfoComponent {
   title: string;
   text: string;
   constructor(){
-    this.title = "LOREM IPSUM";
-    this.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec lorem nec ipsum";
+    this.title = "Hello, I'm Save";
+    this.text = "Our robot will allow us to detect the different elements that can be found in a restaurant, assisting us in the task of recycling.";
   }
 }
 
@@ -25,8 +25,8 @@ export class HomeInfoComponent2 {
   title: string;
   text: string;
   constructor(){
-    this.title = "LOREM IPSUM";
-    this.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec lorem nec ipsum";
+    this.title = "Characteristics";
+    this.text = "Cutting-edge sensors, Machine learning algorithms, Intuitive interface";
   }
 }
 
