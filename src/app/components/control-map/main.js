@@ -92,18 +92,18 @@ document.addEventListener('DOMContentLoaded', event => {
     }
 
     function move() {
-        console.log("¡SE MUEVE!");
+        console.log("alante!");
+
         let topic = new ROSLIB.Topic({
             ros: data.ros,
             name: '/cmd_vel',
             messageType: 'geometry_msgs/msg/Twist'
         })
         let message = new ROSLIB.Message({
-            linear: { x: 0.3, y: 0, z: 0, },
+            linear: { x: 0.4, y: 0, z: 0, },
             angular: { x: 0, y: 0, z: 0, },
         })
         topic.publish(message)
-        //getPosition()
     }
 
     function parar() {

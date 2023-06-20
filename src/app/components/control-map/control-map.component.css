@@ -47,37 +47,37 @@
 
 #m1{
 	top: 300px;
-    left: 400px;
+    left: 550px;
 }
 
 #m2{
 	top: 300px;
-    left: 500px;
+    left: 680px;
 }
 
 #m3{
 	top: 300px;
-    left: 600px;
+    left: 850px;
 }
 
 #m4{
 	top: 300px;
-    left: 700px;
+    left: 1030px;
 }
 
 #m5{
-	top: 500px;
-    left: 400px;
+	top: 460px;
+    left: 540px;
 }
 
 #m6{
-	top: 500px;
-    left: 500px;
+	top: 460px;
+    left: 680px;
 }
 
 #m7{
-	top: 500px;
-    left: 600px;
+	top: 460px;
+    left: 850px;
 }
 
 
@@ -88,6 +88,16 @@
 	justify-content: space-around;
     top: 60px;
     left: 460px;
+    z-index: 1;
+}
+
+.camara2 {
+	width: 150px !important; 
+    height: auto !important;
+	display: flex;
+	justify-content: space-around;
+    top: 60px;
+    left: 660px;
     z-index: 1;
 }
 
